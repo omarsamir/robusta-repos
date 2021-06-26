@@ -27,7 +27,16 @@ class ViewController: UIViewController {
 
 
 extension ViewController: UITableViewDelegate{
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let repoDetailsViewController = self.storyboard?.instantiateViewController(withIdentifier: "RepositoryDetailsViewController") as! RepositoryDetailsViewController
+        var image: UIImage? = nil
+        if let cell = tableView.cellForRow(at: indexPath) as? RepoTableViewCell {
+            image = cell.repoAvatar.image
+        }
+        repoDetailsViewController.avatar = image
+        repoDetailsViewController.repo = filteredRepos?[indexPath.row]
+        self.present(repoDetailsViewController, animated: true, completion: nil)
+    }
 }
 
 extension ViewController: UITableViewDataSource{

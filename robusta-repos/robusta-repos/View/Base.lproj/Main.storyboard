@@ -58,6 +58,45 @@
             </objects>
             <point key="canvasLocation" x="97" y="70"/>
         </scene>
+        <!--Repository Details View Controller-->
+        <scene sceneID="RJ8-AH-bwy">
+            <objects>
+                <viewController storyboardIdentifier="RepositoryDetailsViewController" id="j8a-zE-UsS" customClass="RepositoryDetailsViewController" customModule="robusta_repos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mwC-uX-kLi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YVj-ic-nko">
+                                <rect key="frame" x="5" y="49" width="404" height="224"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvw-Lb-lO4">
+                                <rect key="frame" x="5" y="281" width="404" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PIt-Ye-2x5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qvw-Lb-lO4" firstAttribute="top" secondItem="YVj-ic-nko" secondAttribute="bottom" constant="8" symbolic="YES" id="0SC-sF-YBO"/>
+                            <constraint firstItem="YVj-ic-nko" firstAttribute="top" secondItem="PIt-Ye-2x5" secondAttribute="top" constant="5" id="Kse-QV-4xP"/>
+                            <constraint firstItem="PIt-Ye-2x5" firstAttribute="trailing" secondItem="YVj-ic-nko" secondAttribute="trailing" constant="5" id="PKD-J4-Qfq"/>
+                            <constraint firstItem="YVj-ic-nko" firstAttribute="height" secondItem="mwC-uX-kLi" secondAttribute="height" multiplier="1:4" id="Qam-Ox-WH9"/>
+                            <constraint firstItem="qvw-Lb-lO4" firstAttribute="leading" secondItem="PIt-Ye-2x5" secondAttribute="leading" constant="5" id="RMM-z7-DvZ"/>
+                            <constraint firstItem="YVj-ic-nko" firstAttribute="leading" secondItem="PIt-Ye-2x5" secondAttribute="leading" constant="5" id="mAv-1B-KX7"/>
+                            <constraint firstItem="PIt-Ye-2x5" firstAttribute="trailing" secondItem="qvw-Lb-lO4" secondAttribute="trailing" constant="5" id="mun-ml-DpU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="qvw-Lb-lO4" id="Hhh-rj-xKW"/>
+                        <outlet property="repoAvatar" destination="YVj-ic-nko" id="R2w-Lx-zi2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qoG-aS-mOi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="-603"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="labelColor">

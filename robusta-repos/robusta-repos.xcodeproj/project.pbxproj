@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		075230292687A6F400AA89F0 /* RepositoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075230282687A6F400AA89F0 /* RepositoryPresenter.swift */; };
+		075230382687C18A00AA89F0 /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075230372687C18A00AA89F0 /* RepositoryDetailsViewController.swift */; };
 		076D513626878B4E00394C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D513526878B4E00394C78 /* AppDelegate.swift */; };
 		076D513826878B4E00394C78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D513726878B4E00394C78 /* SceneDelegate.swift */; };
 		076D513A26878B4E00394C78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D513926878B4E00394C78 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		075230282687A6F400AA89F0 /* RepositoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryPresenter.swift; sourceTree = "<group>"; };
+		075230372687C18A00AA89F0 /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
 		076D513226878B4E00394C78 /* robusta-repos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "robusta-repos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		076D513526878B4E00394C78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		076D513726878B4E00394C78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				076D513926878B4E00394C78 /* ViewController.swift */,
+				075230372687C18A00AA89F0 /* RepositoryDetailsViewController.swift */,
 				076D513B26878B4E00394C78 /* Main.storyboard */,
 				076D51862687A23900394C78 /* RepoTableViewCell.swift */,
 				076D51872687A23900394C78 /* RepoTableViewCell.xib */,
@@ -319,6 +322,7 @@
 				076D51882687A23900394C78 /* RepoTableViewCell.swift in Sources */,
 				076D513626878B4E00394C78 /* AppDelegate.swift in Sources */,
 				076D513826878B4E00394C78 /* SceneDelegate.swift in Sources */,
+				075230382687C18A00AA89F0 /* RepositoryDetailsViewController.swift in Sources */,
 				076D516926878C1300394C78 /* ServiceManager.swift in Sources */,
 				076D51752687934E00394C78 /* Repository.swift in Sources */,
 			);
