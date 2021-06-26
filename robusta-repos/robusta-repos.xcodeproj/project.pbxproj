@@ -107,12 +107,12 @@
 		076D513426878B4E00394C78 /* robusta-repos */ = {
 			isa = PBXGroup;
 			children = (
-				076D51732687924100394C78 /* Models */,
 				076D51722687923000394C78 /* ServiceManager */,
+				076D51732687924100394C78 /* Model */,
+				076D518226879BB600394C78 /* Presenter */,
+				076D518126879B5F00394C78 /* View */,
 				076D513526878B4E00394C78 /* AppDelegate.swift */,
 				076D513726878B4E00394C78 /* SceneDelegate.swift */,
-				076D513926878B4E00394C78 /* ViewController.swift */,
-				076D513B26878B4E00394C78 /* Main.storyboard */,
 				076D513E26878B5000394C78 /* Assets.xcassets */,
 				076D514026878B5000394C78 /* LaunchScreen.storyboard */,
 				076D514326878B5000394C78 /* Info.plist */,
@@ -147,13 +147,29 @@
 			path = ServiceManager;
 			sourceTree = "<group>";
 		};
-		076D51732687924100394C78 /* Models */ = {
+		076D51732687924100394C78 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				076D51742687934E00394C78 /* Repository.swift */,
 				076D517C268793E000394C78 /* Owner.swift */,
 			);
-			path = Models;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		076D518126879B5F00394C78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				076D513926878B4E00394C78 /* ViewController.swift */,
+				076D513B26878B4E00394C78 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		076D518226879BB600394C78 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
