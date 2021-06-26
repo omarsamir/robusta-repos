@@ -15,6 +15,8 @@
 		076D514226878B5000394C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076D514026878B5000394C78 /* LaunchScreen.storyboard */; };
 		076D514D26878B5000394C78 /* robusta_reposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D514C26878B5000394C78 /* robusta_reposTests.swift */; };
 		076D515826878B5000394C78 /* robusta_reposUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D515726878B5000394C78 /* robusta_reposUITests.swift */; };
+		076D516926878C1300394C78 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D516826878C1300394C78 /* ServiceManager.swift */; };
+		076D516E26878F1900394C78 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D516D26878F1900394C78 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		076D515326878B5000394C78 /* robusta-reposUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "robusta-reposUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		076D515726878B5000394C78 /* robusta_reposUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = robusta_reposUITests.swift; sourceTree = "<group>"; };
 		076D515926878B5000394C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		076D516826878C1300394C78 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		076D516D26878F1900394C78 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				076D513E26878B5000394C78 /* Assets.xcassets */,
 				076D514026878B5000394C78 /* LaunchScreen.storyboard */,
 				076D514326878B5000394C78 /* Info.plist */,
+				076D516826878C1300394C78 /* ServiceManager.swift */,
+				076D516D26878F1900394C78 /* Constants.swift */,
 			);
 			path = "robusta-repos";
 			sourceTree = "<group>";
@@ -258,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076D516E26878F1900394C78 /* Constants.swift in Sources */,
 				076D513A26878B4E00394C78 /* ViewController.swift in Sources */,
 				076D513626878B4E00394C78 /* AppDelegate.swift in Sources */,
 				076D513826878B4E00394C78 /* SceneDelegate.swift in Sources */,
+				076D516926878C1300394C78 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
