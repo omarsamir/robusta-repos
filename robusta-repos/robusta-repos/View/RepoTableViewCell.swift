@@ -24,4 +24,20 @@ class RepoTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func fillRepoInfo(repo: Repository){
+        self.repositoryName.text = repo.name
+        self.repositoryOwnerName.text = repo.owner.login
+        self.downloadImage(from: repo.owner.avatarURL)
+    }
+    
+    func downloadImage(from stringURL: String) {
+        guard let url = URL(string: stringURL) else {return}
+        ServiceManager.getData(from: url) { data, response, error in
+            guard let data = data, error == nil else { return }
+            DispatchQueue.main.async() { [weak self] in
+                self?.repoAvatar.image = UIImage(data: data)
+            }
+        }
+    }
+    
 }

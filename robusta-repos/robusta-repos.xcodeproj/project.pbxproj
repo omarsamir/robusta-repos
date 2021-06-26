@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075230292687A6F400AA89F0 /* RepositoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075230282687A6F400AA89F0 /* RepositoryPresenter.swift */; };
 		076D513626878B4E00394C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D513526878B4E00394C78 /* AppDelegate.swift */; };
 		076D513826878B4E00394C78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D513726878B4E00394C78 /* SceneDelegate.swift */; };
 		076D513A26878B4E00394C78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D513926878B4E00394C78 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		075230282687A6F400AA89F0 /* RepositoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryPresenter.swift; sourceTree = "<group>"; };
 		076D513226878B4E00394C78 /* robusta-repos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "robusta-repos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		076D513526878B4E00394C78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		076D513726878B4E00394C78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		076D518226879BB600394C78 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				075230282687A6F400AA89F0 /* RepositoryPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			files = (
 				076D516E26878F1900394C78 /* Constants.swift in Sources */,
 				076D513A26878B4E00394C78 /* ViewController.swift in Sources */,
+				075230292687A6F400AA89F0 /* RepositoryPresenter.swift in Sources */,
 				076D517D268793E000394C78 /* Owner.swift in Sources */,
 				076D51882687A23900394C78 /* RepoTableViewCell.swift in Sources */,
 				076D513626878B4E00394C78 /* AppDelegate.swift in Sources */,
