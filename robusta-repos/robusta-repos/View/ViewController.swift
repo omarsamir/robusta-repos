@@ -61,8 +61,28 @@ extension ViewController: RepositoryViewControllerDelegate {
         }
     }
     
-    func presentError(error: Error?) {
-        
+    func presentError() {
+        DispatchQueue.main.async() { [weak self] in
+            let alert = UIAlertController(title: "Oppsss", message: "Somthing wrong happened", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Retry", style: .default, handler: { action in
+                switch action.style{
+                case .default:
+                    self?.presenter?.loadRepositories()
+                @unknown default:
+                    print("Default")
+                }
+            }))
+            
+            alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { action in
+                switch action.style{
+                case .destructive:
+                    alert.dismiss(animated: true, completion: nil)
+                @unknown default:
+                    print("Default")
+                }
+            }))
+            self?.present(alert, animated: true, completion: nil)
+        }
     }
     
     func startLoading() {

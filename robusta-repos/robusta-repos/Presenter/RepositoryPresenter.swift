@@ -9,7 +9,7 @@ import Foundation
 
 protocol RepositoryViewControllerDelegate : class {
     func reloadRepositoriesTableView(repos: [Repository]?)
-    func presentError(error: Error?)
+    func presentError()
     func startLoading()
     func finishLoading()
 }
@@ -24,10 +24,10 @@ class RepositoryPresenter {
     func loadRepositories(){
         self.repositoryViewController?.startLoading()
         ServiceManager.downloadRepos { [weak self] (repos, error) in
-            if repos != nil && error == nil {
+            if repos != nil {
                 self?.repositoryViewController?.reloadRepositoriesTableView(repos: repos ?? [Repository]())
             } else {
-                self?.repositoryViewController?.presentError(error: error)
+                self?.repositoryViewController?.presentError()
             }
             self?.repositoryViewController?.finishLoading()
         }
