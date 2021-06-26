@@ -32,7 +32,7 @@ class RepoTableViewCell: UITableViewCell {
     
     func downloadImage(from stringURL: String) {
         guard let url = URL(string: stringURL) else {return}
-        ServiceManager.getData(from: url) { data, response, error in
+        ServiceManager.getImageData(from: url) { data, response, error in
             guard let data = data, error == nil else { return }
             DispatchQueue.main.async() { [weak self] in
                 self?.repoAvatar.image = UIImage(data: data)
