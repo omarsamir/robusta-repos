@@ -9,7 +9,8 @@ import Foundation
 
 class ServiceManager {
     typealias CompletionHandler = (_ repos: [Repository]?, _ error: Error?) -> Void
-    static func downloadRepos(completionHandler:@escaping CompletionHandler) {
+    static let shared = ServiceManager()
+    func downloadRepos(completionHandler:@escaping CompletionHandler) {
         let url = URL(string: Constants.robustaEndPointsServiceURL)!
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             if error == nil {

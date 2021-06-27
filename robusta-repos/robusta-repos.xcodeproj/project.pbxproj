@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		070DBF412687CE1F003C19E0 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070DBF402687CE1F003C19E0 /* ErrorModel.swift */; };
+		070DBF462687D26A003C19E0 /* RepositoryPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070DBF452687D26A003C19E0 /* RepositoryPresenterTests.swift */; };
+		070DBF4B2687D6BC003C19E0 /* MockServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070DBF4A2687D6BC003C19E0 /* MockServiceManager.swift */; };
 		075230292687A6F400AA89F0 /* RepositoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075230282687A6F400AA89F0 /* RepositoryPresenter.swift */; };
 		075230382687C18A00AA89F0 /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075230372687C18A00AA89F0 /* RepositoryDetailsViewController.swift */; };
 		076D513626878B4E00394C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D513526878B4E00394C78 /* AppDelegate.swift */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		070DBF402687CE1F003C19E0 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		070DBF452687D26A003C19E0 /* RepositoryPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryPresenterTests.swift; sourceTree = "<group>"; };
+		070DBF4A2687D6BC003C19E0 /* MockServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceManager.swift; sourceTree = "<group>"; };
 		075230282687A6F400AA89F0 /* RepositoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryPresenter.swift; sourceTree = "<group>"; };
 		075230372687C18A00AA89F0 /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
 		076D513226878B4E00394C78 /* robusta-repos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "robusta-repos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +140,8 @@
 			children = (
 				076D514C26878B5000394C78 /* robusta_reposTests.swift */,
 				076D514E26878B5000394C78 /* Info.plist */,
+				070DBF452687D26A003C19E0 /* RepositoryPresenterTests.swift */,
+				070DBF4A2687D6BC003C19E0 /* MockServiceManager.swift */,
 			);
 			path = "robusta-reposTests";
 			sourceTree = "<group>";
@@ -336,6 +342,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				070DBF462687D26A003C19E0 /* RepositoryPresenterTests.swift in Sources */,
+				070DBF4B2687D6BC003C19E0 /* MockServiceManager.swift in Sources */,
 				076D514D26878B5000394C78 /* robusta_reposTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

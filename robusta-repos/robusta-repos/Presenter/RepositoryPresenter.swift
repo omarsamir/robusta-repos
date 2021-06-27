@@ -21,9 +21,9 @@ class RepositoryPresenter {
         loadRepositories()
     }
     
-    func loadRepositories(){
+    func loadRepositories(serviceManager: ServiceManager.Type? = ServiceManager.self ){
         self.repositoryViewController?.startLoading()
-        ServiceManager.downloadRepos { [weak self] (repos, error) in
+        serviceManager?.downloadRepos { [weak self] (repos, error) in
             if repos != nil {
                 self?.repositoryViewController?.reloadRepositoriesTableView(repos: repos ?? [Repository]())
             } else {
